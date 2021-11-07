@@ -78,7 +78,7 @@ p {
   margin-top: 2rem;
 }
 
-ul {
+.redessociais {
   margin-top: 4rem;
   list-style: none;
   padding: 0;
@@ -88,6 +88,7 @@ ul {
 }
 
 .rodape {
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   color: var(--gray);
   width: auto;
