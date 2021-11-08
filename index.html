@@ -19,70 +19,86 @@
     <!-- Caixa do Site-->
     <main>
       <div class="container">
-        <!-- Foto e Logo-->
-        <div class="Imagens">
-          <span>
-            <img src="images/Logo Rocketset.svg" alt="Logo branco Rocketseat" />
-          </span>
-          <img
-            id="userImage"
-            src="images/minhafoto.jpg"
-            alt="Foto de Ederson Lucas"
-          />
-        </div>
-
-        <!-- Nome e GitHub-->
-        <h1 id="userName" class="TituloSite">Ederson Lucas</h1>
-        <a
-          id="linkGitHub"
-          href="https://github.com/edersonlucas/"
-          target="_blank"
-        >
-          <img src="images/logos/logo_github.svg" alt="Icone github" />
-          <span id="userGitHub">edersonlucas</span></a
-        >
-
-        <!-- Texto-->
-        <p id="bio">Pequeno Gafanhoto dos Códigos</p>
-
-        <!-- Redes Sociais-->
-        <ul id="socialLinks" class="redessociais">
-          <!-- Linkedin-->
-
-          <li class="linkedin">
-            <a href="https://www.linkedin.com/in/edersonlucas/" target="_blank">
-              <img src="images/logos/logo_linkedin.png" alt="Icone LinkedIn" />
-            </a>
-          </li>
-
-          <!-- Facebook-->
-          <li class="facebook">
-            <a href="https://www.facebook.com/oedersonlucas" target="_blank">
-              <img src="images/logos/logo_facebook.svg" alt="Icone facebook" />
-            </a>
-          </li>
-
-          <!-- Instagram-->
-          <li class="instagram">
-            <a href="https://instagram.com/oedersonlucas" target="_blank">
+        <div class="content">
+          <!-- Foto e Logo-->
+          <div class="Imagens">
+            <span>
               <img
-                src="images/logos/logo_instagram.svg"
-                alt="Icone Instagram"
+                src="images/Logo Rocketset.svg"
+                alt="Logo branco Rocketseat"
               />
-            </a>
-          </li>
+            </span>
+            <img
+              id="userImage"
+              src="images/minhafoto.jpg"
+              alt="Foto de Ederson Lucas"
+            />
+          </div>
 
-          <!-- Youtube-->
-          <li class="youtube">
-            <a
-              href="https://www.youtube.com/channel/UCr4pLUx5KcykmTkg1e5k2Jw"
-              target="_blank"
-            >
-              <img src="images/logos/logo_youtube.svg" alt="Icone Youtube" />
-            </a>
-          </li>
-        </ul>
+          <!-- Nome e GitHub-->
+          <h1 id="userName" class="TituloSite">Ederson Lucas</h1>
+          <a
+            id="linkGitHub"
+            href="https://github.com/edersonlucas/"
+            target="_blank"
+          >
+            <img src="images/logos/logo_github.svg" alt="Icone github" />
+            <span id="userGitHub">edersonlucas</span></a
+          >
+
+          <!-- Texto-->
+          <p id="bio">Pequeno Gafanhoto dos Códigos</p>
+
+          <!-- Redes Sociais-->
+          <ul id="socialLinks" class="redessociais">
+            <!-- Linkedin-->
+
+            <li class="linkedin">
+              <a
+                href="https://www.linkedin.com/in/edersonlucas/"
+                target="_blank"
+              >
+                <img
+                  src="images/logos/logo_linkedin.png"
+                  alt="Icone LinkedIn"
+                />
+              </a>
+            </li>
+
+            <!-- Facebook-->
+            <li class="facebook">
+              <a href="https://www.facebook.com/oedersonlucas" target="_blank">
+                <img
+                  src="images/logos/logo_facebook.svg"
+                  alt="Icone facebook"
+                />
+              </a>
+            </li>
+
+            <!-- Instagram-->
+            <li class="instagram">
+              <a href="https://instagram.com/oedersonlucas" target="_blank">
+                <img
+                  src="images/logos/logo_instagram.svg"
+                  alt="Icone Instagram"
+                />
+              </a>
+            </li>
+
+            <!-- Youtube-->
+            <li class="youtube">
+              <a
+                href="https://www.youtube.com/channel/UCr4pLUx5KcykmTkg1e5k2Jw"
+                target="_blank"
+              >
+                <img src="images/logos/logo_youtube.svg" alt="Icone Youtube" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img id="cartao-desktop" src="images/cartao-desktop.png" alt="" />
       </div>
+      <!-- Card Desktop-->
       <!-- Rodapé-->
       <div class="rodape">
         <p>Desenvolvido por EDL Developer</p>
@@ -90,5 +106,14 @@
     </main>
 
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector('.container'), {
+        reverse: true,
+        max: 3,
+        scale: 1.1,
+        speed: 500
+      })
+    </script>
   </body>
 </html>

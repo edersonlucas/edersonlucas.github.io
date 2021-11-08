@@ -10,10 +10,7 @@ html,
 body {
   --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
-  background: url(images/background-site.svg);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -27,7 +24,6 @@ main {
   background: url(images/background.svg) no-repeat center/cover;
   width: 40vw;
   height: 100vh;
-  max-width: 23.4rem;
   min-width: 23.4rem;
   min-height: 812px;
 }
@@ -98,4 +94,41 @@ p {
   height: auto;
   justify-content: center;
   opacity: 1;
+}
+
+#cartao-desktop {
+  display: none;
+}
+
+/* Desktop */
+
+@media (min-width: 600px) {
+  main {
+    background: url(images/background-site.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+
+  #cartao-desktop {
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+  }
+
+  li {
+    transition: all 0.2s;
+  }
+
+  li:hover {
+    transform: translateY(-0.25em);
+  }
 }
