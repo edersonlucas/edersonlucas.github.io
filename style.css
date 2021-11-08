@@ -100,6 +100,10 @@ p {
   display: none;
 }
 
+#particles-js {
+  display: none;
+}
+
 /* Desktop */
 
 @media (min-width: 600px) {
@@ -131,4 +135,15 @@ p {
   li:hover {
     transform: translateY(-0.25em);
   }
+  #particles-js {
+    position: absolute;
+    background: url(images/background-site.svg) no-repeat center/cover;
+    min-height: 820px;
+    min-width: 1440;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
 }
+
+/* ---- particles.js container ---- */
