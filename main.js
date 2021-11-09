@@ -625,9 +625,20 @@ var VanillaTilt = (function () {
 
 // chamando vanila tilt
 
-VanillaTilt.init(document.querySelector('.container'), {
-  reverse: true,
-  max: 5,
-  scale: 1.1,
-  speed: 400
-})
+function verificarTela() {
+  if (window.innerWidth >= 600) {
+    VanillaTilt.init(document.querySelector('.container'), {
+      reverse: true,
+      max: 5,
+      scale: 1.1,
+      speed: 400
+    })
+    console.log(
+      'Formato de Desktop detectado! Efeito Crachá Carregado com Sucesso'
+    )
+  } else {
+    console.log('Formato de celular detectado! Efeito Crachá não Carregado.')
+  }
+}
+
+verificarTela()
