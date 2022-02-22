@@ -3,8 +3,6 @@
 const LinksSocialMedia = {
   github: 'edersonlucas',
   instagram: 'oedersonlucas',
-  facebook: 'oedersonlucas',
-  youtube: 'channel/UCr4pLUx5KcykmTkg1e5k2Jw',
   linkedin: 'in/edersonlucas'
 }
 // Formas de escrever váriaveis
