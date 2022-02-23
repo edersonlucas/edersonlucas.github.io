@@ -11,6 +11,7 @@
     <meta property="og:description" content="Ederson Lucas">
     <title>Ederson Lucas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,6 +25,22 @@
   </head>
   <body>
     <div id="particles-js"></div>
+
+    <!--Inicio menu-->
+
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<label for="menu-icon"></label>
+  	<nav class="nav"> 		
+  		<ul class="pt-5">
+        <li><a href="index.html">Início</a></li>
+  			<li><a href="#">Portifolio</a></li>
+        <li><a href="#">Habilidades</a></li>
+  			<li><a href="#">Sobre</a></li>
+  		</ul>
+  	</nav>
+
+    <!-- Fim Menu -->
+
     <!-- Caixa do Site-->
     <main>
       <div id="container1" class="container">
@@ -84,8 +101,8 @@
                 />
               </a>
             </li>
+<!-- desativado insta 
 
-            <!-- Instagram-->
             <li class="instagram">
               <a href="https://instagram.com/oedersonlucas" target="_blank">
                 <img
@@ -94,12 +111,19 @@
                 />
               </a>
             </li>
+
+                  -->
           </ul>
         </div>
         <!-- Card Desktop-->
         <img id="cartao-desktop" src="images/cartao-desktop.svg" alt="" />
       </div>
-    <script src="main.js"></script>
-    <script src="particles.js"></script>
+      <!-- Rodapé do site-->
+      <footer class="rodape">
+       <p>Desenvolvido por Ederson Lucas</p>
+      </footer>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="javascript" src="menu.js"></script>
   </body>
 </html>
