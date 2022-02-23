@@ -116,7 +116,10 @@ p {
   text-align: center;
 }
 
-
+#turma {
+top: -24px;
+font-size: 12px;
+}
 
 /* Desktop */
 
